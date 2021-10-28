@@ -17,7 +17,7 @@ header {
 
 main {
   background: url(../img/nature_grey.jpg) no-repeat;
-  background-size: 100%;
+  background-size: cover;
   flex-grow: 1;
 }
 
@@ -28,7 +28,6 @@ footer {
   min-height: 90px;
   position: fixed;
   bottom: 0px;
-  z-index: 0;
 }
 
 /* MAIN FORMAT END */
@@ -37,18 +36,27 @@ footer {
 
 .search {
   display: inline-block;
+  font-weight: bolder;
   height: 15px;
   padding: 13px;
   border-radius: 15px 0px 0px 15px;
   margin-right: -6px;
-  border-color: black;
+  border-width: 3px;
+  border-color: #272f40;
 }
 
 .submit {
   border-radius: 0px 15px 15px 0px;
-  height: 45px;
+  height: 47px;
   vertical-align: -7.5px;
-  border-color: black;
+  border-color: #272f40;
+  border-width: 3px;
+  color: #fff;
+  background: #272f40;
+}
+
+.submit:hover {
+  background: #707070;
 }
 
 .search_bar {
@@ -64,7 +72,7 @@ footer {
   height: 170px;
   width: 300px;
   display: inline-block;
-  margin: 20px;
+  margin: 20px 60px 20px 20px;
   background: url(../img/rainydays_logo.png) no-repeat;
   background-size: contain;
 }
@@ -77,23 +85,27 @@ footer {
   text-decoration: none;
 }
 
-.material-icons.md-36 {
-  font-size: 36px;
-  vertical-align: -15px;
-  padding: 10px;
+.copyright a:hover {
+  color: #fff;
 }
 
-.material-icons.md-24 {
-  font-size: 24px;
-  vertical-align: -6px;
+i {
+  color: #272f40;
 }
 
 i:hover {
   color: #707070;
 }
 
-.copyright a:hover {
-  color: #fff;
+.material-icons.md-36 {
+  font-size: 48px;
+  vertical-align: -20px;
+  padding: 10px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+  vertical-align: -6px;
 }
 
 /* NAV START */
@@ -108,8 +120,7 @@ ul {
 }
 
 .bottom_nav {
-  margin-top: 120px;
-  flex-grow: 1;
+  margin-top: 115px;
   z-index: 1;
 }
 
@@ -117,10 +128,6 @@ ul {
 .bottom_nav li {
   display: inline-block;
   padding: 10px;
-}
-
-.bottom_nav {
-  float: right;
 }
 
 .main_nav a {
@@ -137,6 +144,7 @@ nav a {
   text-decoration: none;
 }
 
+.active_nav a,
 .main_nav a:hover {
   background-color: #707070;
 }
@@ -146,17 +154,16 @@ nav a {
   display: none;
 }
 
-.active_nav a {
-  background-color: #707070;
-}
-
 /* NAV END */
 
 /* MEDIUM START */
 
-@media (max-width: 1600px) {
-  main {
-    background-size: 150%;
+@media (max-width: 1500px) {
+  .logo {
+    display: inline-block;
+    background: url(../img/rainydays_logo_top.png) no-repeat;
+    background-size: contain;
+    margin: 20px 20px 0px 20px;
   }
 
   header {
@@ -164,13 +171,12 @@ nav a {
     text-align: center;
   }
 
-  .main_nav,
-  .bottom_nav {
-    margin: 0px;
+  .main_nav {
+    margin: 0px 0px 0px 20px;
   }
 
   .bottom_nav {
-    float: none;
+    margin-top: 0px;
     display: inline-block;
   }
 
@@ -185,36 +191,31 @@ nav a {
 /* MOBILE START */
 
 @media (max-width: 750px) {
-  main {
-    background-size: 300%;
-  }
-
-  header {
-    text-align: center;
-  }
-
-  .logo {
-    display: inline-block;
-    background: url(../img/rainydays_logo_top.png) no-repeat;
-    background-size: contain;
-    margin-bottom: 0px;
-  }
-
   .main_nav {
+    text-align: center;
+    background: #c5ccd9;
+    border-radius: 0px 25px 0px 0px;
     display: none;
     margin: 0px;
     position: absolute;
-    bottom: 100px;
-    left: 20px;
-  }
-
-  #mobile_menu:checked ~ .main_nav {
-    display: block;
+    bottom: 90px;
   }
 
   .main_nav li {
     display: block;
-  
+  }
+
+  .main_nav a {
+    color: #272f40;
+    /* background: none; */
+    background-size: cover;
+    width: 32vw;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  #mobile_menu:checked ~ .main_nav {
+    display: block;
   }
 
   .bottom_nav {
@@ -224,7 +225,6 @@ nav a {
     display: block;
     position: fixed;
     bottom: 15px;
-    margin: 0px;
   }
 
   .bottom_nav li {
@@ -234,12 +234,11 @@ nav a {
 
   .search_bar {
     display: block;
-    padding: 0px;
     margin-top: 0px;
   }
 
   .mobile_only {
-    display: block;
+    display: inline-block;
   }
 
   .copyright {
