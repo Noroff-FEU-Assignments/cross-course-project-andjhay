@@ -194,7 +194,7 @@ nav a {
   .main_nav {
     text-align: center;
     background: #c5ccd9;
-    border-radius: 0px 25px 0px 0px;
+    border-radius: 0px 50px 0px 0px;
     display: none;
     margin: 0px;
     position: absolute;
@@ -203,15 +203,26 @@ nav a {
 
   .main_nav li {
     display: block;
+    padding: 0px;
   }
 
   .main_nav a {
+    display: block;
     color: #272f40;
-    /* background: none; */
+    background: #c5ccd9;
     background-size: cover;
     width: 32vw;
     border-radius: 0px;
-    padding: 0px;
+  }
+
+  .active_nav a {
+    background: #707070;
+    color: #fff;
+  }
+
+  .nav_top,
+  .active_nav a {
+    border-radius: 0px 25px 0px 0px;
   }
 
   #mobile_menu:checked ~ .main_nav {
@@ -228,7 +239,7 @@ nav a {
   }
 
   .bottom_nav li {
-    width: 32vw;
+    width: 25vw;
     padding: 0px;
   }
 
