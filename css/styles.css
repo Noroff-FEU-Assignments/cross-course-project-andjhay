@@ -24,10 +24,7 @@ main {
 footer {
   background-color: #c5ccd9;
   height: auto;
-  width: 100%;
   min-height: 90px;
-  position: fixed;
-  bottom: 0px;
 }
 
 /* MAIN FORMAT END */
