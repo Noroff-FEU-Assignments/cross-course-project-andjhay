@@ -28,10 +28,9 @@ main {
 
 footer {
   background-color: #c5ccd9;
-  height: auto;
   width: 100%;
   bottom: 0px;
-  min-height: 90px;
+  height: 90px;
 }
 
 /* MAIN FORMAT END */
