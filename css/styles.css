@@ -29,6 +29,8 @@ main {
 footer {
   background-color: #c5ccd9;
   height: auto;
+  width: 100%;
+  bottom: 0px;
   min-height: 90px;
 }
 
@@ -37,8 +39,7 @@ footer {
 /* SEARCH BAR START */
 
 .search {
-  display: inline;
-  font-weight: bolder;
+  font-weight: 900;
   height: 15px;
   padding: 13px;
   border-radius: 15px 0px 0px 15px;
@@ -48,10 +49,9 @@ footer {
 }
 
 .submit {
-  display: inline;
   border-radius: 0px 15px 15px 0px;
   height: 47px;
-  vertical-align: -7.5px;
+  vertical-align: -6.8px;
   border-color: #272f40;
   border-width: 3px;
   color: #fff;
@@ -124,7 +124,6 @@ ul {
 
 .bottom_nav {
   margin-top: 115px;
-  z-index: 1;
 }
 
 .main_nav li,
@@ -161,7 +160,7 @@ nav a {
 
 /* MEDIUM START */
 
-@media (max-width: 1500px) {
+@media (max-width: 1550px) {
   .logo {
     display: inline-block;
     background: url(../img/rainydays_logo_top.png) no-repeat;
