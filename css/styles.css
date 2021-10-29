@@ -1,12 +1,15 @@
 /* MAIN FORMAT */
 
-html,
+html {
+  height: 100%;
+}
+
 body {
   display: flex;
   flex-direction: column;
   padding: 0px;
   margin: 0px;
-  height: 100vh;
+  height: 100%;
   min-width: 400px;
 }
 
@@ -34,7 +37,7 @@ footer {
 /* SEARCH BAR START */
 
 .search {
-  display: inline-block;
+  display: inline;
   font-weight: bolder;
   height: 15px;
   padding: 13px;
@@ -45,6 +48,7 @@ footer {
 }
 
 .submit {
+  display: inline;
   border-radius: 0px 15px 15px 0px;
   height: 47px;
   vertical-align: -7.5px;
