@@ -24,6 +24,7 @@ header {
 main {
   width: 100%;
   flex-grow: 1;
+  height: 100% + 90px;
 }
 
 footer {
@@ -85,13 +86,6 @@ nav a {
   text-decoration: none;
 }
 
-.active_nav a,
-.main_nav a:hover {
-  background-color: #707070;
-  color: #fff;
-  padding: 10px 30px;
-}
-
 #mobile_menu,
 .mobile_only {
   display: none;
@@ -102,28 +96,25 @@ nav a {
 /* SEARCH BAR START */
 
 .search {
-  font-size: 24px;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
   padding: 10px;
   border-radius: 15px 0px 0px 15px;
   margin-right: -8px;
-  border-width: 2px;
+  border-width: 3px;
   border-color: #000000;
   width: 250px;
 }
 
 .submit {
   border-radius: 0px 15px 15px 0px;
-  height: 52px;
+  height: 53px;
   width: 50px;
   border-color: #000000;
-  vertical-align: -4px;
-  border-width: 2px;
+  vertical-align: -6px;
+  border-width: 3px;
   color: #fff;
   background: #272f40;
-}
-
-.submit:hover {
-  background: #707070;
 }
 
 .search_bar {
@@ -138,21 +129,24 @@ nav a {
 
 /* PAGE CONTENT START */
 
+/* HOME PAGE START */
+
 .homepage {
   background: url(../img/nature_grey.jpg) no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   text-align: center;
 }
 
 .home_title {
+  color: #ffffff;
   position: relative;
   left: 30px;
   display: inline-block;
-  font-family: Impact;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-weight: bold;
   text-align: left;
   font-size: 50px;
-  width: 270px;
+  width: 300px;
 }
 
 .home_img {
@@ -168,12 +162,10 @@ nav a {
   background-position-x: center;
 }
 
+/* HOME PAGE END */
+
 i {
   color: #272f40;
-}
-
-i:hover {
-  color: #707070;
 }
 
 .material-icons.md-36 {
@@ -183,7 +175,7 @@ i:hover {
 
 .material-icons.md-24 {
   font-size: 24px;
-  vertical-align: -6px;
+  vertical-align: -5px;
 }
 
 /* PAGE CONTENT END */
@@ -191,7 +183,8 @@ i:hover {
 /* FOOTER START */
 
 .copyright,
-.copyright a {
+.copyright a, a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   font-size: 24px;
   color: #fff;
@@ -203,6 +196,8 @@ i:hover {
 }
 
 /* FOOTER END */
+
+/* MEDIA QUERIES START */
 
 /* MEDIUM START */
 
@@ -225,7 +220,7 @@ i:hover {
   .bottom_nav {
     margin: 0px;
     display: inline-block;
-    bottom: -15px;
+    bottom: -20px;
   }
 
   .search_bar {
@@ -261,11 +256,6 @@ i:hover {
     background-size: cover;
     width: 33vw;
     border-radius: 0px;
-  }
-
-  .active_nav a {
-    background: #707070;
-    color: #fff;
   }
 
   .nav_top,
@@ -325,3 +315,27 @@ i:hover {
 }
 
 /* MOBILE END */
+
+/* MEDIA QUERIES END */
+
+/* ACTIONS START */
+
+i:hover {
+  color: #707070;
+}
+
+.submit:hover {
+  background: #707070;
+}
+
+.active_nav a,
+.main_nav a:hover {
+  background-color: #707070;
+  color: #fff;
+}
+
+a.active_icon, .active_icon {
+  color: #707070;
+}
+
+/* ACTIONS END */
