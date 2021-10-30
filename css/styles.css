@@ -41,6 +41,7 @@ footer {
 /* HEADER START */
 
 .logo {
+  color: transparent;
   height: 150px;
   width: 270px;
   display: inline-block;
@@ -160,6 +161,9 @@ nav a {
   background: url(../img/photo_rain.jpg) no-repeat;
   background-size: cover;
   background-position-x: center;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #565902;
 }
 
 /* HOME PAGE END */
@@ -183,7 +187,8 @@ i {
 /* FOOTER START */
 
 .copyright,
-.copyright a, a {
+.copyright a,
+a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   font-size: 24px;
@@ -334,7 +339,8 @@ i:hover {
   color: #fff;
 }
 
-a.active_icon, .active_icon {
+a.active_icon,
+.active_icon {
   color: #707070;
 }
 
