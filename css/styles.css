@@ -24,7 +24,6 @@ header {
 main {
   width: 100%;
   flex-grow: 1;
-  height: 100% + 90px;
 }
 
 footer {
@@ -141,7 +140,7 @@ nav a {
 .home_title {
   color: #ffffff;
   position: relative;
-  left: 30px;
+
   display: inline-block;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
@@ -155,9 +154,13 @@ nav a {
   top: 110px;
   right: 30px;
   display: inline-block;
-  border-radius: 100px;
-  width: 200px;
-  height: 200px;
+  border-radius: 100vw;
+  max-height: 270px;
+  max-width: 270px;
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
   background: url(../img/photo_rain.jpg) no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -314,8 +317,6 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 150px;
-    height: 150px;
   }
 }
 
