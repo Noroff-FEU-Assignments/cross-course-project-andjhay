@@ -154,7 +154,7 @@ nav a {
   top: 110px;
   right: 30px;
   display: inline-block;
-  border-radius: 100vw;
+  border-radius: 50%;
   max-height: 270px;
   max-width: 270px;
   width: 15vw;
