@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rainydays - Noroff - Andrew Hay</title>
+    <title>Rainydays - About</title>
     <link rel="icon" href="img/rainydays_icon.ico" />
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Front-End Development Cross Course Repository Project Andrew Hay page based on design project Rainy Days"
-    />
+    <meta name="description" content="Rainydays about page with details of the companies origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +17,7 @@
       <input type="checkbox" id="mobile_menu" />
       <nav class="main_nav">
         <ul>
-          <li class="active_nav nav_top"><a class="nav_top" href="index.html">Home</a></li>
+          <li class="nav_top"><a class="nav_top" href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
@@ -50,16 +46,58 @@
         </ul>
       </nav>
     </header>
-    <main class="content homepage">
-      <div>
-        <h1 class="home_title">Covering You On A Rainy Day!</h1>
-        <div class="home_img"></div>
+    <main class="content">
+      <h1>Contact Us</h1>
+      <iframe
+        class="location_map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9439.403035075127!2d32.80962509452043!3d39.91123493307979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f4b70fc2305%3A0xc99085df9dc02ed7!2zQXJtYWRhIEFsxLHFn3ZlcmnFnyB2ZSDEsMWfIE1lcmtlemk!5e0!3m2!1sen!2sno!4v1636452946939!5m2!1sen!2sno"
+        loading="lazy"
+      ></iframe>
+      <div class="contact_form">
+        <h2>You can find us at</h2>
+        <p>
+          123 raincoat street <br />
+          77752, Atlantis
+        </p>
+        <p>or</p>
+        <p>
+          Email us at: <br />
+          support@rainydays.com
+        </p>
+        <label for="contact">Contact Form</label>
+        <form action="">
+          <ul class="contact_form">
+            <li>
+              <label for="name">Name</label>
+            </li>
+            <li>
+              <input type="" name="" id="name" />
+            </li>
+            <li>
+              <label for="email">Email</label>
+            </li>
+            <li>
+              <input type="" name="" id="Email" />
+            </li>
+            <li>
+              <label for="message">Message</label>
+            </li>
+            <li>
+              <input type="text" name="Message" id="message" />
+            </li>
+            <li>
+              <input type="submit" />
+            </li>
+          </ul>
+        </form>
       </div>
     </main>
     <footer>
       <p class="copyright">
         Copyright &copy; &nbsp; - &nbsp;
-        <a href="contact.html">Contact&nbsp;<span class="material-icons md-24">mail</span></a>
+        <a class="active_icon" href="contact.html"
+          >Contact&nbsp;<span class="material-icons md-24 active_icon">mail</span>
+        </a>
       </p>
     </footer>
   </body>

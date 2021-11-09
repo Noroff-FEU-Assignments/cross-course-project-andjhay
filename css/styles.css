@@ -1,3 +1,13 @@
+/* VARIABLES */
+
+:root {
+  --dark-blue: #272f40;
+  --light-blue: #c5ccd9;
+  --custom-grey: #707070;
+  --nature-green: #565902;
+  --nav-transition-time: 0.5s;
+}
+
 /* MAIN FORMAT */
 
 html {
@@ -16,7 +26,7 @@ body {
 }
 
 header {
-  background-color: #c5ccd9;
+  background-color: var(--light-blue);
   display: flex;
   width: 100%;
 }
@@ -24,20 +34,21 @@ header {
 main {
   width: 100%;
   flex-grow: 1;
+  padding-bottom: 110px;
 }
 
 footer {
-  background-color: #272f40;
+  background-color: var(--dark-blue);
   width: 100%;
-  height: 90px;
   position: fixed;
+  height: 90px;
   bottom: 0px;
   z-index: 0;
 }
 
 /* MAIN FORMAT END */
 
-/* HEADER START */
+/* HEADER */
 
 .logo {
   color: transparent;
@@ -49,7 +60,7 @@ footer {
   background-size: contain;
 }
 
-/* NAV START */
+/* NAV */
 
 ul {
   padding: 0px;
@@ -74,15 +85,17 @@ ul {
 }
 
 .main_nav a {
+  transition-property: background;
+  transition-duration: var(--nav-transition-time);
   padding: 10px 30px;
-  background-color: #272f40;
+  background: var(--dark-blue);
   border-radius: 15px;
   text-align: center;
 }
 
 nav a {
   font-size: 30px;
-  color: #fff;
+  color: white;
   text-decoration: none;
 }
 
@@ -93,7 +106,7 @@ nav a {
 
 /* NAV END */
 
-/* SEARCH BAR START */
+/* SEARCH BAR */
 
 .search {
   font-size: 18px;
@@ -102,7 +115,7 @@ nav a {
   border-radius: 15px 0px 0px 15px;
   margin-right: -8px;
   border-width: 3px;
-  border-color: #000000;
+  border-color: black;
   width: 250px;
 }
 
@@ -110,11 +123,17 @@ nav a {
   border-radius: 0px 15px 15px 0px;
   height: 53px;
   width: 50px;
-  border-color: #000000;
+  border-color: black;
   vertical-align: -6px;
   border-width: 3px;
-  color: #fff;
-  background: #272f40;
+  color: white;
+  transition-property: background-color;
+  transition-duration: var(--nav-transition-time);
+  background-color: var(--dark-blue);
+}
+
+.submit_active {
+  background: var(--custom-grey);
 }
 
 .search_bar {
@@ -127,20 +146,22 @@ nav a {
 
 /* HEADER END */
 
-/* PAGE CONTENT START */
+/* PAGE CONTENT */
 
-/* HOME PAGE START */
+.content {
+  text-align: center;
+}
+
+/* HOME PAGE */
 
 .homepage {
   background: url(../img/nature_grey.jpg) no-repeat;
   background-size: cover;
-  text-align: center;
 }
 
 .home_title {
-  color: #ffffff;
+  color: white;
   position: relative;
-
   display: inline-block;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: bold;
@@ -166,14 +187,49 @@ nav a {
   background-position-x: center;
   border-style: solid;
   border-width: 10px;
-  border-color: #565902;
+  border-color: var(--nature-green);
 }
 
 /* HOME PAGE END */
 
-i {
-  color: #272f40;
+/* CONTACT */
+
+.location_map {
+  width: 40vw;
+  height: 450px;
+  border: 10px solid var(--dark-blue);
+  border-radius: 30px;
 }
+
+.contact_form {
+  width: 300px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.contact_form li {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+.contact_form li input {
+  border-radius: 15px;
+}
+
+#message {
+  width: 300px;
+  height: 50px;
+}
+
+/* CONTACT END */
+
+/* ABOUT */
+
+.founder {
+  border-radius: 10%;
+}
+
+/* ABOUT END */
 
 .material-icons.md-36 {
   font-size: 48px;
@@ -185,9 +241,19 @@ i {
   vertical-align: -5px;
 }
 
+i {
+  color: var(--dark-blue);
+  transition-property: color;
+  transition-duration: var(--nav-transition-time);
+}
+
+i:hover {
+  color: var(--custom-grey);
+}
+
 /* PAGE CONTENT END */
 
-/* FOOTER START */
+/* FOOTER */
 
 .copyright,
 .copyright a,
@@ -195,25 +261,32 @@ a {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
   font-size: 24px;
-  color: #fff;
+  color: white;
   text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--nav-transition-time);
 }
 
 .copyright a:hover {
-  color: #707070;
+  color: var(--custom-grey);
 }
 
 /* FOOTER END */
 
-/* MEDIA QUERIES START */
+/* MEDIA QUERIES */
 
-/* MEDIUM START */
+/* MEDIUM FORMAT */
 
 @media (max-width: 1550px) {
   .logo {
     background: url(../img/rainydays_logo_top.png) no-repeat;
     background-size: contain;
     margin: 20px 20px 0px 20px;
+  }
+
+  .location_map {
+    width: 50vw;
+    height: 40vh;
   }
 
   header {
@@ -237,11 +310,16 @@ a {
   }
 }
 
-/* MEDIUM END */
+/* MEDIUM FORMAT END */
 
-/* MOBILE START */
+/* MOBILE FORMAT */
 
 @media (max-width: 750px) {
+  .location_map {
+    width: 80vw;
+    height: 30vh;
+  }
+
   .main_nav {
     text-align: center;
     border-radius: 0px 50px 0px 0px;
@@ -259,8 +337,8 @@ a {
 
   .main_nav a {
     display: block;
-    color: #c5ccd9;
-    background: #272f40;
+    color: var(--light-blue);
+    background: var(--dark-blue);
     background-size: cover;
     width: 33vw;
     border-radius: 0px;
@@ -276,7 +354,7 @@ a {
   }
 
   i {
-    color: #c5ccd9;
+    color: var(--light-blue);
   }
 
   .bottom_nav {
@@ -320,29 +398,29 @@ a {
   }
 }
 
-/* MOBILE END */
+/* MOBILE FORMAT END */
 
 /* MEDIA QUERIES END */
 
-/* ACTIONS START */
-
-i:hover {
-  color: #707070;
-}
+/* ACTIONS */
 
 .submit:hover {
-  background: #707070;
+  background: var(--custom-grey);
 }
 
 .active_nav a,
 .main_nav a:hover {
-  background-color: #707070;
-  color: #fff;
+  background: var(--custom-grey);
+  color: white;
 }
 
 a.active_icon,
 .active_icon {
-  color: #707070;
+  color: var(--custom-grey);
 }
 
 /* ACTIONS END */
+
+/* ANIMATIONS */
+
+/* ANIMATIONS START */

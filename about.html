@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Rainydays - Men's Jackets</title>
+    <title>Rainydays - About</title>
     <link rel="icon" href="img/rainydays_icon.ico" />
-    <meta
-      name="description"
-      content="Front-End Development Cross Course Repository Project Andrew Hay page based on design project Rainy Days"
-    />
+    <meta name="description" content="Rainydays about page with details of the companies origin" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../css/styles.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a class="logo" alt="Rainydays Logo" href="../index.html">Rainydays logo, links to home page</a>
+      <a class="logo" alt="Rainydays Logo" href="index.html">Rainydays logo, links to home page</a>
       <input type="checkbox" id="mobile_menu" />
       <nav class="main_nav">
         <ul>
-          <li class="nav_top"><a class="nav_top" href="../index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li class="active_nav"><a href="men.html">Men</a></li>
+          <li class="nav_top"><a class="nav_top" href="index.html">Home</a></li>
+          <li class="active_nav"><a href="about.html">About</a></li>
+          <li><a href="men.html">Men</a></li>
           <li><a href="women.html">Women</a></li>
           <li>
             <a class="mobile_only" href="contact.html">Contact</a>
@@ -30,8 +27,8 @@
         </ul>
       </nav>
       <div class="search_bar">
-        <form>
-          <input class="search" type="text" placeholder="Search..." />
+        <form role="search" action="search.html">
+          <input class="search" type="search" placeholder="Search..." />
           <input type="submit" class="material-icons submit" value="search" />
         </form>
       </div>
@@ -49,7 +46,24 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <div class="content">
+        <h1>About Us</h1>
+        <p>
+          Rainydays est 2021 is the cumulative efforts of our design, sales and testing teams to bring you the best
+          product available on the market.
+        </p>
+        <img
+          class="founder"
+          src="img/rainydays_founder_person_does_not_exist.jpg"
+          alt="Picture of the founder of Rainydays Boris Johnson"
+        />
+        <p>
+          Our founder Boris Johnson saw a need for a more affordable range of outdoors clothing that would allow the
+          normal person to access the great outdoors.
+        </p>
+      </div>
+    </main>
     <footer>
       <p class="copyright">
         Copyright &copy; &nbsp; - &nbsp;
