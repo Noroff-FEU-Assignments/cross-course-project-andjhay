@@ -5,6 +5,7 @@
   --light-blue: #c5ccd9;
   --custom-grey: #707070;
   --nature-green: #565902;
+  --custom-white: #ffffe5;
   --nav-transition-time: 0.5s;
   --heading-font: Impact, "Arial Narrow Bold", sans-serif;
   --body-font: "Poppins", sans-serif;
@@ -36,6 +37,7 @@ header {
 }
 
 main {
+  background-color: var(--custom-white);
   width: 100%;
   flex-grow: 1;
   padding-bottom: 110px;
