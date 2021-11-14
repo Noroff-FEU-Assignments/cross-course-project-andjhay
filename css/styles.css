@@ -1,0 +1,685 @@
+/* VARIABLES */
+
+:root {
+  --dark-blue: #272f40;
+  --light-blue: #c5ccd9;
+  --custom-grey: #707070;
+  --nature-green: #565902;
+  --nav-transition-time: 0.5s;
+  --heading-font: Impact, "Arial Narrow Bold", sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --menu-font: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/* MAIN FORMAT */
+
+html {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+  min-width: 360px;
+  overflow-y: scroll;
+}
+
+header {
+  background-color: var(--light-blue);
+  display: flex;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  flex-grow: 1;
+  padding-bottom: 110px;
+}
+
+footer {
+  background-color: var(--dark-blue);
+  width: 100%;
+  position: fixed;
+  height: 90px;
+  bottom: 0px;
+  z-index: 0;
+}
+
+/* MAIN FORMAT END */
+
+/* HEADER */
+
+.logo {
+  color: transparent;
+  height: 150px;
+  width: 270px;
+  display: inline-block;
+  margin: 20px 60px 20px 20px;
+  background: url(../img/rainydays_logo.png) no-repeat;
+  background-size: contain;
+}
+
+/* NAV */
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main_nav,
+.bottom_nav {
+  display: block;
+  margin-top: 110px;
+}
+
+.bottom_nav {
+  position: relative;
+  bottom: 17px;
+}
+
+.main_nav li,
+.bottom_nav li {
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+.main_nav a {
+  transition-property: background;
+  transition-duration: var(--nav-transition-time);
+  padding: 10px 30px;
+  background: var(--dark-blue);
+  border-radius: 15px;
+  text-align: center;
+}
+
+nav a {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+#mobile_menu,
+.mobile_only {
+  display: none;
+}
+
+/* NAV END */
+
+/* SEARCH BAR */
+
+.search {
+  font-size: 18px;
+  font-family: var(--body-font);
+  padding: 10px;
+  border-radius: 15px 0px 0px 15px;
+  margin-right: -8px;
+  border-width: 3px;
+  border-color: black;
+  width: 250px;
+}
+
+.submit {
+  border-radius: 0px 15px 15px 0px;
+  height: 53px;
+  width: 50px;
+  border-color: black;
+  vertical-align: -6px;
+  border-width: 3px;
+  color: white;
+  transition-property: background-color;
+  transition-duration: var(--nav-transition-time);
+  background-color: var(--dark-blue);
+}
+
+.submit_active {
+  background: var(--custom-grey);
+}
+
+.search_bar {
+  display: inline-block;
+  margin-top: 100px;
+  min-width: 301px;
+}
+
+/* SEARCH BAR END */
+
+/* HEADER END */
+
+/* PAGE CONTENT */
+
+.material-icons.md-36 {
+  font-size: 48px;
+  padding: 10px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+  vertical-align: -5px;
+}
+
+i {
+  color: var(--dark-blue);
+  transition-property: color;
+  transition-duration: var(--nav-transition-time);
+}
+
+i:hover {
+  color: var(--custom-grey);
+}
+
+.cta_button,
+.selectors {
+  display: block;
+  color: white;
+  background-color: var(--dark-blue);
+  padding: 10px 20px;
+  border-radius: 15px;
+  width: fit-content;
+  margin: 10px auto 0;
+}
+
+.cta_button {
+  transition-property: color;
+  transition-duration: var(--nav-transition-time);
+}
+
+.vertical_cta_button {
+  margin: 30px 0px 30px;
+}
+
+.checkout_grid {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--heading-font);
+  color: var(--dark-blue);
+}
+
+.content {
+  text-align: center;
+}
+
+.content p {
+  max-width: 360px;
+  margin: 20px auto;
+}
+
+main p {
+  font-family: var(--body-font);
+}
+
+p a {
+  color: #272f40;
+  padding: 0px 10px;
+}
+
+.content_form {
+  font-family: var(--heading-font);
+  margin: 0 auto;
+  text-align: left;
+  height: 550px;
+}
+
+.content_form input,
+textarea {
+  font-family: var(--body-font);
+  border: 3px solid var(--dark-blue);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px -5px;
+  display: block;
+  width: 300px;
+  resize: none;
+}
+
+.contact_form textarea {
+  height: 150px;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: var(--dark-blue);
+  font-family: var(--menu-font);
+  padding: 10px 15px;
+}
+
+.weather_icons {
+  margin: 10px;
+}
+
+.account {
+  text-align: left;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.order {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.cart_grid {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+.selectors {
+  margin: 0 auto;
+  width: fit-content;
+  font-family: var(--body-font);
+}
+
+.text_left {
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+}
+
+.in_page_nav {
+  margin: 20px;
+}
+
+.in_page_nav a {
+  padding: 0px;
+}
+
+/* PRODUCT GALLERY */
+
+.product_gallery_grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 50px;
+}
+
+.jacket_card {
+  text-align: center;
+  padding: 20px;
+  border: 5px rgba(141, 141, 141, 0.575) solid;
+  border-radius: 20px;
+}
+
+.jacket_gallery {
+  width: 25vw;
+  border-radius: 20px;
+}
+
+/* COLOUR SELECTOR */
+
+.color_select {
+  font-family: var(--body-font);
+  height: 90px;
+  width: 190px;
+}
+
+#black,
+#grey,
+#green,
+#orange {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--dark-blue);
+  position: relative;
+  top: 6px;
+}
+
+.jacket_img_sizer {
+  opacity: 0;
+  width: 30vw;
+}
+
+.jacket_img {
+  position: relative;
+  right: 40vw;
+  bottom: 115px;
+  width: 30vw;
+  border-radius: 20px;
+}
+
+#black:checked,
+#black:hover {
+  border: 12px solid black;
+}
+
+#grey:checked,
+#grey:hover {
+  border: 12px solid rgb(141, 141, 141);
+}
+
+#green:checked,
+#green:hover {
+  border: 12px solid rgb(49, 165, 78);
+}
+
+#orange:checked,
+#orange:hover {
+  border: 12px solid rgb(219, 117, 50);
+}
+
+#black:checked ~ .jacket_img {
+  background: url(../img/jacket_black.jpg) no-repeat;
+  background-size: cover;
+}
+
+#grey:checked ~ .jacket_img {
+  background: url(../img/jacket_grey.jpg) no-repeat;
+  background-size: cover;
+}
+
+#green:checked ~ .jacket_img {
+  background: url(../img/jacket_green.jpg) no-repeat;
+  background-size: cover;
+}
+
+#orange:checked ~ .jacket_img {
+  background: url(../img/jacket_orange.jpg) no-repeat;
+  background-size: cover;
+}
+
+/* COLOUR SELECTOR END */
+
+/* PRODUCT GALLERY END */
+
+/* PRODUCT PAGE */
+
+.product_page_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px 50px 20vw 50px;
+}
+
+.product_detail {
+  max-width: 300px;
+}
+
+/* PRODUCT PAGE END */
+
+/* HOME PAGE */
+
+.homepage {
+  background: url(../img/nature_grey.jpg) no-repeat;
+  background-size: cover;
+}
+
+.home_title {
+  color: white;
+  position: relative;
+  display: inline-block;
+  font-family: var(--heading-font);
+  font-weight: bold;
+  text-align: left;
+  font-size: 50px;
+  width: 300px;
+}
+
+.home_img {
+  position: relative;
+  top: 110px;
+  right: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  max-height: 270px;
+  max-width: 270px;
+  width: 15vw;
+  height: 15vw;
+  min-width: 150px;
+  min-height: 150px;
+  background: url(../img/photo_rain.jpg) no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  border-style: solid;
+  border-width: 10px;
+  border-color: var(--nature-green);
+}
+
+/* HOME PAGE END */
+
+/* CONTACT */
+
+.location_map {
+  width: 25vw;
+  height: 450px;
+  border: 10px solid var(--dark-blue);
+  border-radius: 30px;
+}
+
+.contact_page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5vw;
+}
+
+/* CONTACT END */
+
+/* ABOUT */
+
+.founder {
+  border-radius: 10%;
+  width: 80vw;
+  max-width: 400px;
+}
+
+/* ABOUT END */
+
+/* PAGE CONTENT END */
+
+/* FOOTER */
+
+.copyright,
+.copyright a,
+a {
+  font-family: var(--menu-font);
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--nav-transition-time);
+}
+
+.copyright a:hover {
+  color: var(--custom-grey);
+}
+
+/* FOOTER END */
+
+/* MEDIA QUERIES */
+
+/* MEDIUM FORMAT */
+
+@media (max-width: 1550px) {
+  .logo {
+    background: url(../img/rainydays_logo_top.png) no-repeat;
+    background-size: contain;
+    margin: 20px 20px 0px 20px;
+  }
+
+  .location_map {
+    width: 60vw;
+    height: 30vh;
+  }
+
+  header {
+    display: inline;
+    text-align: center;
+  }
+
+  .main_nav {
+    margin: 0px 0px 0px 20px;
+  }
+
+  .bottom_nav {
+    margin: 0px;
+    display: inline-block;
+    bottom: -20px;
+  }
+
+  .search_bar {
+    margin: 25px;
+    padding: 0px;
+  }
+
+  .product_gallery_grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contact_page {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* MEDIUM FORMAT END */
+
+/* MOBILE FORMAT */
+
+@media (max-width: 750px) {
+  .main_nav {
+    text-align: center;
+    border-radius: 0px 50px 0px 0px;
+    display: none;
+    margin: 0px;
+    position: fixed;
+    bottom: 90px;
+    z-index: 3;
+  }
+
+  .main_nav li {
+    display: block;
+    padding: 0px;
+  }
+
+  .main_nav a {
+    display: block;
+    color: var(--light-blue);
+    background: var(--dark-blue);
+    background-size: cover;
+    width: 33vw;
+    border-radius: 0px;
+  }
+
+  .nav_top,
+  .nav_top a {
+    border-radius: 0px 25px 0px 0px;
+  }
+
+  #mobile_menu:checked ~ .main_nav {
+    display: block;
+  }
+
+  i {
+    color: var(--light-blue);
+  }
+
+  .bottom_nav {
+    width: 100vw;
+    min-width: 170px;
+    display: block;
+    position: fixed;
+    bottom: 10px;
+    z-index: 2;
+  }
+
+  .bottom_nav li {
+    width: 25vw;
+    padding: 0px;
+  }
+
+  .search_bar {
+    display: block;
+    margin-top: 0px;
+  }
+
+  .mobile_only {
+    display: inline-block;
+  }
+
+  .copyright {
+    display: none;
+  }
+
+  .home_title {
+    position: unset;
+    font-size: 30px;
+    width: 200px;
+  }
+
+  .home_img {
+    position: unset;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product_gallery_grid,
+  .checkout_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product_page_grid {
+    grid-template-columns: 0fr 1fr;
+  }
+
+  .product_detail {
+    margin: 0 auto;
+  }
+
+  .jacket_img {
+    position: relative;
+    left: 0;
+    top: 30px;
+  }
+
+  .color_select {
+    margin-bottom: 50vw;
+  }
+}
+
+/* MOBILE FORMAT END */
+
+/* MEDIA QUERIES END */
+
+/* ACTIONS */
+
+.submit:hover {
+  background: var(--custom-grey);
+}
+
+.active_nav a,
+.main_nav a:hover,
+.cta_button:hover {
+  background: var(--custom-grey);
+  color: white;
+}
+
+a.active_icon,
+.active_icon {
+  color: var(--custom-grey);
+}
+
+.order_link:hover {
+  background-color: var(--light-blue);
+  border-radius: 10px;
+}
+
+/* ACTIONS END */
+
+/* ANIMATIONS */
+
+/* ANIMATIONS START */

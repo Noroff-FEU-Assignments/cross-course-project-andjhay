@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rainydays - Log In</title>
+    <link rel="icon" href="img/rainydays_icon.ico" />
+    <meta name="description" content="Rainydays login and sign up page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" alt="Rainydays Logo" href="index.html">Rainydays logo, links to home page</a>
+      <input type="checkbox" id="mobile_menu" />
+      <nav class="main_nav">
+        <ul>
+          <li class="nav_top"><a class="nav_top" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li>
+            <a class="mobile_only" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search_bar">
+        <form role="search" action="men.html">
+          <input class="search" type="search" placeholder="Search..." />
+          <input type="submit" class="material-icons submit" value="search" />
+        </form>
+      </div>
+      <nav class="bottom_nav">
+        <ul>
+          <li>
+            <label class="mobile_only" for="mobile_menu"><i class="material-icons md-36">menu</i></label>
+          </li>
+          <li>
+            <a href="login.html"><i class="material-icons md-36 active_icon">person</i></a>
+          </li>
+          <li>
+            <a href="shopping_cart.html"><i class="material-icons md-36">shopping_cart</i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="in_page_nav"><a href="index.html">Home</a> > <a href="login.html">Log in</a></p>
+      <div class="content account">
+        <h1>Log in</h1>
+        <div class="content_form">
+          <form action="account.html">
+            <label for="email">Email</label>
+            <input type="username" name="email" id="email" />
+            <label for="password">Password</label>
+            <input type="password" />
+            <button>Sign Up</button>
+            <button>Log in</button>
+          </form>
+          <div class="button">
+            <p>Sign up now for membership deals and free shipping!</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">
+        Copyright &copy; &nbsp; - &nbsp;
+        <a href="contact.html">Contact&nbsp;<span class="material-icons md-24">mail</span></a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rainydays - Contact</title>
+    <link rel="icon" href="img/rainydays_icon.ico" />
+    <meta name="description" content="Rainydays contact page with message sent confirmation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="logo" alt="Rainydays Logo" href="index.html">Rainydays logo, links to home page</a>
+      <input type="checkbox" id="mobile_menu" />
+      <nav class="main_nav">
+        <ul>
+          <li class="nav_top"><a class="nav_top" href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li class="active_nav">
+            <a class="mobile_only" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="search_bar">
+        <form role="search" action="men.html">
+          <input class="search" type="search" placeholder="Search..." />
+          <input type="submit" class="material-icons submit" value="search" />
+        </form>
+      </div>
+      <nav class="bottom_nav">
+        <ul>
+          <li>
+            <label class="mobile_only" for="mobile_menu"><i class="material-icons md-36">menu</i></label>
+          </li>
+          <li>
+            <a href="account.html"><i class="material-icons md-36">person</i></a>
+          </li>
+          <li>
+            <a href="shopping_cart.html"><i class="material-icons md-36">shopping_cart</i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="in_page_nav"><a href="index.html">Home</a> > <a href="contact.html">Contact</a></p>
+      <div class="content">
+        <h1>Contact Us</h1>
+        <div class="contact_page">
+          <div>
+            <h2>You can find us at</h2>
+            <p>
+              123 raincoat street <br />
+              77752, Atlantis
+            </p>
+            <p>or</p>
+            <p>
+              Email us at:
+              <p>
+              <a href="mailto:support@rainydays.com"> support@rainydays.com</a>
+            </p>
+            </p>
+          </div>
+          <div>
+            <iframe
+              class="location_map"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9439.403035075127!2d32.80962509452043!3d39.91123493307979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f4b70fc2305%3A0xc99085df9dc02ed7!2zQXJtYWRhIEFsxLHFn3ZlcmnFnyB2ZSDEsMWfIE1lcmtlemk!5e0!3m2!1sen!2sno!4v1636452946939!5m2!1sen!2sno"
+              loading="lazy"
+            ></iframe>
+          </div>
+          <div class="content_form">
+            <h2>Contact Form</h2>
+            <form class="contact_form" action="contact_successful.html">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+              <label for="email">Email</label>
+              <input type="text" name="email" id="email" />
+              <label for="message">Message</label>
+              <textarea name="message" id="message" placeholder="Your Message Here..."></textarea>
+              <button type="submit">submit</button> <p> Message Sent! We will reply with haste!</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p class="copyright">
+        Copyright &copy; &nbsp; - &nbsp;
+        <a class="active_icon" href="contact.html"
+          >Contact&nbsp;<span class="material-icons md-24 active_icon">mail</span>
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
