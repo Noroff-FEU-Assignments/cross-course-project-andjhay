@@ -268,8 +268,9 @@ button {
 /* COLOUR SELECTOR */
 
 .color_select {
+  font-family: var(--body-font);
   height: 90px;
-  width: 180px;
+  width: 190px;
 }
 
 #black,
@@ -450,6 +451,11 @@ i:hover {
   border-radius: 15px;
   width: fit-content;
   margin: 10px auto 0;
+}
+
+.cta_button {
+  transition-property: color;
+  transition-duration: var(--nav-transition-time);
 }
 
 .vertical_cta_button {
@@ -651,7 +657,8 @@ a {
 }
 
 .active_nav a,
-.main_nav a:hover {
+.main_nav a:hover,
+.cta_button:hover {
   background: var(--custom-grey);
   color: white;
 }
@@ -659,6 +666,18 @@ a {
 a.active_icon,
 .active_icon {
   color: var(--custom-grey);
+}
+
+#black:hover,
+#green:hover,
+#grey:hover,
+#orange:hover {
+  background-color: var(--dark-blue);
+}
+
+.order_link:hover {
+  background-color: var(--light-blue);
+  border-radius: 10px;
 }
 
 /* ACTIONS END */
