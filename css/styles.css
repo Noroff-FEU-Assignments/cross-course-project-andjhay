@@ -163,7 +163,7 @@ h3 {
 }
 
 .content p {
-  max-width: 500px;
+  max-width: 450px;
   margin: 20px auto;
 }
 
@@ -184,6 +184,7 @@ p a {
   font-family: var(--heading-font);
   margin: 0 auto;
   text-align: left;
+  height: 550px;
 }
 
 .content_form input,
@@ -194,7 +195,7 @@ textarea {
   padding: 5px;
   margin: 10px -5px;
   display: block;
-  width: 400px;
+  width: 300px;
   resize: none;
 }
 
@@ -203,8 +204,39 @@ textarea {
 }
 
 button {
+  border: none;
+  color: white;
+  background-color: var(--dark-blue);
   font-family: var(--menu-font);
-  padding: 5px 10px;
+  padding: 10px 15px;
+}
+
+.weather_icons {
+  margin: 10px;
+}
+
+.account {
+  text-align: left;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.order {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.cart_grid {
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+}
+
+.selectors {
+  margin: 10px auto 0px auto;
+  width: fit-content;
+  font-family: var(--body-font);
 }
 
 /* PRODUCT GALLERY */
@@ -218,13 +250,16 @@ button {
 }
 
 .jacket_card {
+  min-width: 350px;
   text-align: center;
   padding: 20px;
   border: 5px rgba(141, 141, 141, 0.575) solid;
+  border-radius: 20px;
 }
 
 .jacket_gallery {
-  width: 20vw;
+  width: 25vw;
+  border-radius: 20px;
 }
 
 /* COLOUR SELECTOR */
@@ -249,12 +284,17 @@ button {
   top: 6px;
 }
 
+.jacket_img_sizer {
+  opacity: 0;
+  width: 30vw;
+}
+
 .jacket_img {
   position: relative;
   right: 40vw;
   bottom: 115px;
   width: 30vw;
-  height: 100vh;
+  border-radius: 20px;
 }
 
 #black:checked {
@@ -275,22 +315,22 @@ button {
 
 #black:checked ~ .jacket_img {
   background: url(../img/jacket_black.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #grey:checked ~ .jacket_img {
   background: url(../img/jacket_grey.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #green:checked ~ .jacket_img {
   background: url(../img/jacket_green.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 #orange:checked ~ .jacket_img {
   background: url(../img/jacket_orange.jpg) no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 /* COLOUR SELECTOR END */
@@ -302,7 +342,7 @@ button {
 .product_page_grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin: 0px 50px 30vw 50px;
+  margin: 0px 50px 20vw 50px;
 }
 
 .product_detail {
@@ -367,8 +407,6 @@ button {
   gap: 5vw;
 }
 
-contact section
-
 /* CONTACT END */
 
 /* ABOUT */
@@ -397,6 +435,27 @@ i {
 
 i:hover {
   color: var(--custom-grey);
+}
+
+.cta_button,
+.selectors {
+  color: white;
+  background-color: var(--dark-blue);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+.vertical_cta_button {
+  margin: 30px 0px 30px;
+}
+
+.text_left {
+  text-align: left;
+  margin: 0px 0px 20px 0px;
+}
+
+.checkout_grid {
+  display: grid;
 }
 
 /* PAGE CONTENT END */
@@ -433,8 +492,8 @@ a {
   }
 
   .location_map {
-    width: 50vw;
-    height: 40vh;
+    width: 60vw;
+    height: 30vh;
   }
 
   header {
@@ -470,12 +529,7 @@ a {
 
 /* MOBILE FORMAT */
 
-@media (max-width: 750px) {
-  .location_map {
-    width: 80vw;
-    height: 30vh;
-  }
-
+@media (max-width: 970px) {
   .main_nav {
     text-align: center;
     border-radius: 0px 50px 0px 0px;

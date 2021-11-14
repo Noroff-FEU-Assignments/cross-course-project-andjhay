@@ -48,14 +48,13 @@
     </header>
     <main>
       <p>
-        <a class="first_in_line" href="index.html">Home </a>><a href="men.html">Men</a>><a href="account.html"
-          >Mens Jacket</a
-        >
+        <a class="first_in_line" href="index.html">Home</a> > <a href="men.html">Men</a> >
+        <a href="account.html">Jacket</a>
       </p>
       <div class="product_page_grid">
         <div></div>
         <div class="product_detail">
-          <h1>Mens Jacket</h1>
+          <h1>Jacket</h1>
           <div class="color_select">
             <input type="radio" id="black" name="color_select" value="Black" checked />
             <label for="black">Black</label>
@@ -68,7 +67,7 @@
 
             <input type="radio" id="orange" name="color_select" value="Orange" />
             <label for="orange">Orange</label>
-            <div class="jacket_img"></div>
+            <div class="jacket_img"><img class="jacket_img_sizer" src="img/jacket_black.jpg" alt=""></div>
           </div>
           <div>
             <span class="material-icons md-24">ac_unit</span>
@@ -76,7 +75,23 @@
             <span class="material-icons md-24">air</span>
           </div>
           <h2>Price - 100 NOK</h2>
-          <p class="add_to_cart">BUTTON</p>
+          <div class="selectors text_left">
+            <label for="quantity">Quantity:</label>
+            <select name="quantity" id="quantity">
+              <option value="one">1</option>
+              <option value="two">2</option>
+              <option value="three">3</option>
+              <option value="four">4</option>
+            </select>
+            <label for="size">Size:</label>
+            <select name="size" id="size">
+              <option value="small">S</option>
+              <option value="medium">M</option>
+              <option value="large">L</option>
+              <option value="xl">XL</option>
+            </select>
+          </div>
+          <a href="shopping_cart.html" class="cta_button">Add To Cart</a>
           <h2>About the Product</h2>
           <p>
             is just great it does a lot of stuff including being rain proof and wind proof yet breathable and will keep
@@ -88,28 +103,46 @@
         <h3>YOU MAY ALSO LIKE</h3>
         <div class="product_gallery_grid">
           <div class="jacket_card">
-            <h2>Standard Jacket</h2>
+            <h2>Jacket</h2>
             <a href="product.html"
-              ><img class="jacket_gallery" src="img/jacket_black.jpg" alt="picture of dark coloured jacket."
-            /></a>
-            <h2>100 NOK</h2>
-            <p class="add_to_cart">more details</p>
+              ><img class="jacket_gallery" src="img/jacket_black.jpg" alt="picture of dark coloured jacket." />
+            </a>
+            <div class="weather_icons">
+              <span class="material-icons md-24">ac_unit</span>
+              <span class="material-icons md-24">water_drop</span>
+              <span class="material-icons md-24">air</span>
+            </div>
+            <h2>Price - 100 NOK</h2>
+            <a href="product.html" class="cta_button">More Details</a>
+            <a href="shopping_cart.html" class="cta_button">Add To Cart</a>
           </div>
           <div class="jacket_card">
-            <h2>Standard Jacket</h2>
+            <h2>Jacket</h2>
             <a href="product.html"
-              ><img class="jacket_gallery" src="img/jacket_black.jpg" alt="picture of dark coloured jacket."
-            /></a>
-            <h2>100 NOK</h2>
-            <p class="add_to_cart">more details</p>
+              ><img class="jacket_gallery" src="img/jacket_black.jpg" alt="picture of dark coloured jacket." />
+            </a>
+            <div class="weather_icons">
+              <span class="material-icons md-24">ac_unit</span>
+              <span class="material-icons md-24">water_drop</span>
+              <span class="material-icons md-24">air</span>
+            </div>
+            <h2>Price - 100 NOK</h2>
+            <a href="product.html" class="cta_button">More Details</a>
+            <a href="shopping_cart.html" class="cta_button">Add To Cart</a>
           </div>
           <div class="jacket_card">
-            <h2>Standard Jacket</h2>
+            <h2>Jacket</h2>
             <a href="product.html"
-              ><img class="jacket_gallery" src="img/jacket_black.jpg" alt="picture of dark coloured jacket."
-            /></a>
-            <h2>100 NOK</h2>
-            <p class="add_to_cart">more details</p>
+              ><img class="jacket_gallery" src="img/jacket_black.jpg" alt="picture of dark coloured jacket." />
+            </a>
+            <div class="weather_icons">
+              <span class="material-icons md-24">ac_unit</span>
+              <span class="material-icons md-24">water_drop</span>
+              <span class="material-icons md-24">air</span>
+            </div>
+            <h2>Price - 100 NOK</h2>
+            <a href="product.html" class="cta_button">More Details</a>
+            <a href="shopping_cart.html" class="cta_button">Add To Cart</a>
           </div>
         </div>
       </div>
