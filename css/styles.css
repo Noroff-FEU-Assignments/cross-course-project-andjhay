@@ -456,6 +456,8 @@ i:hover {
 
 .checkout_grid {
   display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
+  margin: 0 auto;
 }
 
 /* PAGE CONTENT END */
@@ -607,7 +609,8 @@ a {
     margin-right: auto;
   }
 
-  .product_gallery_grid {
+  .product_gallery_grid,
+  .checkout_grid {
     grid-template-columns: 1fr;
   }
 }
