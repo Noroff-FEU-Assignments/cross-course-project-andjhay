@@ -250,7 +250,6 @@ button {
 }
 
 .jacket_card {
-  min-width: 350px;
   text-align: center;
   padding: 20px;
   border: 5px rgba(141, 141, 141, 0.575) solid;
@@ -586,6 +585,12 @@ a {
   .search_bar {
     display: block;
     margin-top: 0px;
+  }
+
+  .cta_button {
+    display: block;
+    margin: 10px auto 0;
+    width: fit-content;
   }
 
   .mobile_only {
