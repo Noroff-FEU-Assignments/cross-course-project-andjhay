@@ -8,7 +8,7 @@ const emailError = document.querySelector("#email-error");
 const messageValue = document.querySelector("#message");
 const messageError = document.querySelector("#message-error");
 
-// FORM VALIDATION
+// FORM VALIDATION JAVASCRIPT
 function validateContactForm() {
   try {
     event.preventDefault();

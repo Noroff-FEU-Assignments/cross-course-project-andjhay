@@ -1,5 +1,6 @@
 const displayCartItems = document.querySelector(".display-items");
 const listCartItems = document.querySelector(".cart_grid");
+const submitCheckout = document.querySelector(".checkout-button");
 
 let cartTotal = localStorage.getItem("cartTotal");
 
@@ -31,3 +32,9 @@ function createCart() {
 }
 
 createCart();
+
+submitCheckout.addEventListener("click", clearCart);
+
+function clearCart() {
+  localStorage.clear();
+}

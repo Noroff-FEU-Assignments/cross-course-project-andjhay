@@ -238,6 +238,10 @@ p a {
   height: 100%;
 }
 
+.form-error {
+  color: red;
+}
+
 .payment,
 .shipping {
   vertical-align: top;
@@ -455,6 +459,7 @@ button {
   font-weight: bold;
   text-align: left;
   font-size: 50px;
+  letter-spacing: 5px;
   width: 300px;
 }
 
@@ -679,11 +684,14 @@ a {
   }
 
   .display-items {
-    width: 10vw;
+    width: 25vw;
+    margin-left: 62.5vw;
+    margin-right: 12.5vw;
     position: fixed;
+    right: -20px;
     top: unset;
     bottom: 42px;
-    color: #f6ffff;
+    color: black;
   }
 }
 
