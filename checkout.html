@@ -60,6 +60,7 @@
           </li>
           <li>
             <a href="shopping_cart.html"><i class="material-icons md-36 active_icon">shopping_cart</i></a>
+            <div class="display-items"></div>
           </li>
         </ul>
       </nav>
@@ -72,14 +73,8 @@
       </p>
       <div class="content">
         <h1>Checkout</h1>
-        <h2>Jacket</h2>
-        <img class="order" src="img/jacket_black.jpg" alt="picture of dark coloured jacket." />
-        <p>
-          Quantity: 1
-          <br />
-          Size: L
-        </p>
-        <p>Total Price: 100 NOK</p>
+        <div class="cart_grid">
+        </div>
           <div class="content_form">
             <div class="shipping">
             <h2>Shipping Details (required)</h2>
@@ -137,7 +132,7 @@
                 <input type="text" id="csv" placeholder="000" />
                 <div class="form-error" id="csv">CSV is required</div>
               </div>
-              <button>Pay Now</button>
+              <button class="checkout-button">Continue</button>
             </form>
           </div>
         </div>

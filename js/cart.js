@@ -1,7 +1,5 @@
 const displayCartItems = document.querySelector(".display-items");
 const listCartItems = document.querySelector(".cart_grid");
-const selectQuantity = document.querySelector("#quantity");
-const selectSize = document.querySelector("#size");
 
 let cartTotal = localStorage.getItem("cartTotal");
 
