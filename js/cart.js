@@ -1,5 +1,6 @@
 const displayCartItems = document.querySelector(".display-items");
 const listCartItems = document.querySelector(".cart_grid");
+const checkoutButton = document.querySelector(".to_checkout");
 
 let cartTotal = localStorage.getItem("cartTotal");
 
@@ -7,6 +8,7 @@ function updatePageData(cartNum) {
   if (cartNum === null || cartNum === Array) {
     displayCartItems.innerHTML = `0`;
     listCartItems.innerHTML = "<h2> No Items in Cart </h2>";
+    checkoutButton.style.display = "none";
   } else {
     displayCartItems.innerHTML = `${cartNum}`;
   }
