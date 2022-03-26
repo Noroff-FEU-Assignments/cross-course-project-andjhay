@@ -26,7 +26,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script src="js/scripts.js" defer></script>
+    <script src="js/cart.js" defer></script>
   </head>
   <body>
     <header>
@@ -59,6 +59,7 @@
           </li>
           <li>
             <a href="shopping_cart.html"><i class="material-icons md-36 active_icon">shopping_cart</i></a>
+            <div class="display-items"></div>
           </li>
         </ul>
       </nav>
@@ -71,47 +72,7 @@
       <div class="content">
         <h1>Your Items</h1>
         <div class="cart_grid">
-          <div>
-            <h2>Jacket</h2>
-            <img class="order" src="img/jacket_black.jpg" alt="picture of dark coloured jacket." />
-            <div class="selectors">
-              <label for="quantity">Quantity:</label>
-              <select name="quantity" id="quantity">
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-              </select>
-              <label for="size">Size:</label>
-              <select name="size" id="size">
-                <option value="small">S</option>
-                <option value="medium">M</option>
-                <option value="large">L</option>
-                <option value="xl">XL</option>
-              </select>
-            </div>
-          </div>
-            <div>
-              <h2>Jacket</h2>
-              <img class="order" src="img/jacket_green.jpg" alt="picture of dark coloured jacket." />
-              <div class="selectors">
-                <label for="quantity">Quantity:</label>
-                <select name="quantity" id="quantity">
-                  <option value="one">1</option>
-                  <option value="two">2</option>
-                  <option value="three">3</option>
-                  <option value="four">4</option>
-                </select>
-                <label for="size">Size:</label>
-                <select name="size" id="size">
-                  <option value="small">S</option>
-                  <option value="medium">M</option>
-                  <option value="large">L</option>
-                  <option value="xl">XL</option>
-                </select>
-              </div>
-          </div>
-          </div>
+        </div>
           <div>
             <a href="men.html" class="cta_button">Continue Shopping</a>
           </div> 

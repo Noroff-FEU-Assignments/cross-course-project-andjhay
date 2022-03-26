@@ -26,7 +26,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script src="js/scripts.js" defer></script>
+    <script src="js/productpage.js" defer></script>
   </head>
   <body>
     <header>
@@ -59,6 +59,7 @@
           </li>
           <li>
             <a href="shopping_cart.html"><i class="material-icons md-36">shopping_cart</i></a>
+            <div class="display-items"></div>
           </li>
         </ul>
       </nav>
@@ -71,7 +72,7 @@
       <div class="product_page_grid">
         <div></div>
         <div class="product_detail">
-          <h1>Jacket</h1>
+          <h1 class="product-name">Jacket</h1>
           <div class="color_select">
             <input type="radio" id="black" name="color_select" value="Black" checked />
             <label for="black">Black</label>
@@ -108,7 +109,7 @@
               <option value="xl">XL</option>
             </select>
           </div>
-          <a href="shopping_cart.html" class="cta_button text_left">Add to Cart</a>
+          <button class="cta_button add-to-cart" id="add-to-cart">Add to Cart</button>
           <h2>About the Product</h2>
           <p>
             is just great it does a lot of stuff including being rain proof and wind proof yet breathable and will keep

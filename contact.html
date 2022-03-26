@@ -26,7 +26,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script src="js/scripts.js" defer></script>
+    <script src="js/contactform.js" defer></script>
   </head>
   <body>
     <header>
@@ -91,15 +91,33 @@
           </div>
           <div class="content_form">
             <h2>Contact Form</h2>
-            <form class="contact_form" action="contact_successful.html">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" />
-              <label for="email">Email</label>
-              <input type="text" name="email" id="email" />
-              <label for="message">Message</label>
-              <textarea name="message" id="message" placeholder="Your Message Here..."></textarea>
-              <button type="submit">Submit</button>
-            </form>
+            <div class="form">
+              <form class="contact-form">
+                <div class="validation-passed"><h3>Form submitted successfully!</h3></div>
+        
+                <!-- required input -->
+                <div class="form-element">
+                  <label for="name">Name (required)</label>
+                  <input type="text" id="name" placeholder="Enter name" />
+                  <div class="form-error" id="name-error">Name is required</div>
+                </div>
+        
+                <!-- must look like email xxxx@xxxx.xxxx -->
+                <div class="form-element">
+                  <label for="email">Email (required)</label>
+                  <input type="text" id="email" placeholder="Enter email" />
+                  <div class="form-error" id="email-error">Please enter a valid email address</div>
+                </div>
+        
+                <!-- min length 25 -->
+                <div class="form-element">
+                  <label for="message">Message (required minimum 25 characters) </label>
+                  <textarea type="text" id="message" placeholder="Enter message"></textarea>
+                  <div class="form-error" id="message-error">Message must be 25 character length minimum</div>
+                </div>
+        
+                <button>Submit</button>
+              </form>
           </div>
         </div>
       </div>

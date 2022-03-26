@@ -154,6 +154,13 @@ nav a {
 
 /* PAGE CONTENT */
 
+.display-items {
+  position: absolute;
+  right: 40px;
+  top: 19px;
+  color: #f6ffff;
+}
+
 .material-icons.md-36 {
   font-size: 48px;
   padding: 10px;
@@ -175,7 +182,8 @@ i:hover {
 }
 
 .cta_button,
-.selectors {
+.selectors,
+button {
   display: block;
   color: white;
   background-color: var(--dark-blue);
@@ -192,12 +200,6 @@ i:hover {
 
 .vertical_cta_button {
   margin: 30px 0px 30px;
-}
-
-.checkout_grid {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 0.5fr;
-  margin: 0 auto;
 }
 
 h1,
@@ -228,8 +230,20 @@ p a {
 .content_form {
   font-family: var(--heading-font);
   margin: 0 auto;
-  text-align: left;
+
   height: 550px;
+}
+
+.payment,
+.shipping {
+  vertical-align: top;
+  margin: 20px;
+  display: inline-block;
+}
+
+.checkout {
+  width: 100vw;
+  margin: 0 auto;
 }
 
 .content_form input,
@@ -244,8 +258,13 @@ textarea {
   resize: none;
 }
 
-.contact_form textarea {
+textarea {
   height: 150px;
+}
+
+.form-error,
+.validation-passed {
+  display: none;
 }
 
 button {
@@ -629,8 +648,7 @@ a {
     margin-right: auto;
   }
 
-  .product_gallery_grid,
-  .checkout_grid {
+  .product_gallery_grid {
     grid-template-columns: 1fr;
   }
 
@@ -651,6 +669,14 @@ a {
   .color_select {
     margin-bottom: 50vw;
   }
+
+  .display-items {
+    width: 10vw;
+    position: fixed;
+    top: unset;
+    bottom: 42px;
+    color: #f6ffff;
+  }
 }
 
 /* MOBILE FORMAT END */
@@ -665,7 +691,8 @@ a {
 
 .active_nav a,
 .main_nav a:hover,
-.cta_button:hover {
+.cta_button:hover,
+button:hover {
   background: var(--custom-grey);
   color: white;
 }

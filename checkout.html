@@ -27,6 +27,7 @@
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
     <script src="js/scripts.js" defer></script>
+    <script src="js/checkoutform.js" defer></script>
   </head>
   <body>
     <header>
@@ -79,45 +80,70 @@
           Size: L
         </p>
         <p>Total Price: 100 NOK</p>
-        <div class="checkout_grid">
-          <div></div>
           <div class="content_form">
-            <h2>Shipping Details</h2>
-            <form class="contact_form" action="contact_successful.html">
-              <label for="name">Name</label>
-              <input type="text" name="name" id="name" placeholder="John Doe" />
-              <label for="email">Email</label>
-              <input type="email" name="email" id="email" placeholder="johndoe@example.com" />
-              <label for="phone">Phone Number</label>
-              <input type="text" name="phone" id="phone" placeholder="+47 XXX XX XXX" />
-              <label for="address">Address</label>
-              <input type="text" name="address" id="address" />
-              <label for="city">City</label>
-              <input type="text" name="city" id="city" />
-              <label for="postcode">Postcode</label>
-              <input type="text" name="postcode" id="postcode" placeholder="XX XXX" />
-            </form>
-          </div>
-
-          <div class="content_form">
-            <h2>Payment Details</h2>
-            <form class="contact_form" action="contact_successful.html">
-              <label for="cardname">Name on Card</label>
-              <input type="text" name="cardname" id="cardname" placeholder="John Doe" />
-              <label for="card">Card Number</label>
-              <input type="text" name="card" id="card" placeholder="XXXX XXXX XXXX XXXX" />
-              <label for="month">Exp Month</label>
-              <input type="number" name="month" id="month" placeholder="jan" />
-              <label for="month">Exp Year</label>
-              <input type="number" name="year" id="year" placeholder="2000" />
-              <label for="csv">CSV</label>
-              <input type="number" name="csv" id="csv" placeholder="xxx" />
+            <div class="shipping">
+            <h2>Shipping Details (required)</h2>
+            <form class="checkout-form">
+              <div class="form-element">
+                <label for="name">First and Last Name</label>
+                <input type="text" id="name" placeholder="John Doe" />
+                <div class="form-error" id="name-error">Name is required</div>
+              </div>
+              <div class="form-element">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="johndoe@example.com" />
+                <div class="form-error" id="email-error">Email is required</div>
+              </div>
+              <div class="form-element">
+                <label for="phone">Phone number</label>
+                <input type="text" id="phone" placeholder="000 00 000" />
+                <div class="form-error" id="phone-error">Phone number is required</div>
+              </div>
+              <div class="form-element">
+                <label for="address">Address</label>
+                <input type="text" id="address" placeholder="" />
+                <div class="form-error" id="address-error">Address is required</div>
+              </div>
+              <div class="form-element">
+                <label for="city">City</label>
+                <input type="text" id="city" placeholder="" />
+                <div class="form-error" id="city-error">City is required</div>
+              </div>
+              <div class="form-element">
+                <label for="postcode">Postcode</label>
+                <input type="text" id="postcode" placeholder=" 0000" />
+                <div class="form-error" id="postcode-error">City is required</div>
+              </div>
+            </div>
+            <div class="payment">
+              <h2>Payment Details (required)</h2>
+              <div class="form-element">
+                <label for="name">Name on Card</label>
+                <input type="text" id="name" placeholder="John Doe" />
+                <div class="form-error" id="name-error">Name is required</div>
+              </div>
+              <div class="form-element">
+                <label for="cardnumber">Card Number</label>
+                <input type="text" id="cardnumber" placeholder="0000 0000 0000 0000" />
+                <div class="form-error" id="card-error">Number is required</div>
+              </div>
+              <div class="form-element">
+                <label for="exp-date">Expiration Date</label>
+                <input type="text" id="exp-date" placeholder="01/22" />
+                <div class="form-error" id="exp-error">Expiration is required</div>
+              </div>
+              <div class="form-element">
+                <label for="csv">CSV</label>
+                <input type="text" id="csv" placeholder="000" />
+                <div class="form-error" id="csv">CSV is required</div>
+              </div>
+              <button>Pay Now</button>
             </form>
           </div>
         </div>
-        <a href="checkout_success.html" class="cta_button">Pay Now</a>
+      
+        </div>
       </div>
-      <div></div>
     </main>
     <footer>
       <p class="copyright">
