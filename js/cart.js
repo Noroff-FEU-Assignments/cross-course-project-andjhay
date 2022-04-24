@@ -29,12 +29,12 @@ function createCart() {
             <div class="details">
               <p>Quantity: ${[cartItem.total]}</p>
               <p>Size: ${[cartItem.size]}</p>
-              <p id="price">Price: ${[cartItem.price]}</p>
+              <p id="price">Price: ${[cartItem.price]} Kr</p>
             </div>
             <button class="remove" data-id="${[index]}"> Remove Item </button>
           </div>`;
 
-    priceTally += Number(cartItem.price.slice(0, -3));
+    priceTally += Number(cartItem.price);
   });
   listCartItems.innerHTML += `<h2 class="details">Total Price: ${priceTally} Kr</h2>`;
 }

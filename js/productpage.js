@@ -15,8 +15,6 @@ htmlTitle.innerHTML = `Rainydays - ${products[productId].name}`;
 navProduct.innerHTML = `${products[productId].name}`;
 
 let price = products[productId].prices.price.slice(0, -2);
-let priceDecimals = products[productId].prices.price.slice(3);
-let productPrice = price + "," + priceDecimals;
 
 productPageGrid.innerHTML += `<div></div>
         <div class="product-detail">
@@ -27,7 +25,7 @@ productPageGrid.innerHTML += `<div></div>
             <span class="material-icons md-24">water_drop</span>
             <span class="material-icons md-24">air</span>
           </div>
-          <h2>Price - ${productPrice} Kr</h2>
+          <h2>Price - ${price} Kr</h2>
           <div class="details text-left">
             <label for="size">Size:</label>
             <select name="size" id="size"></select>
@@ -48,12 +46,14 @@ const displayCartItems = document.querySelector(".display-items");
 products[productId].attributes[0].terms.forEach((color) => {
   colorSelect.innerHTML += `<input type="radio" id="${color.name.toLowerCase()}" name="color-select" 
   value="${color.name}"/> <label for="${color.name}">${color.name}</label>`;
-  // colorSelect.input.checked.style.border = "12px solid black";
 });
 
 // COLOR SELECT LOOP
 
 // DISPLAY PRODUCT IMG
+
+console.log(products[productId].name.toLowerCase());
+console.log(productColor.toLowerCase());
 
 colorSelect.innerHTML += `<div class="product-img"><img class="product-img-sizer" src="img/${products[
   productId
@@ -61,7 +61,9 @@ colorSelect.innerHTML += `<div class="product-img"><img class="product-img-sizer
 
 const productImg = document.querySelector(".product-img");
 
-productImg.style.background = `url(./img/${products[productId].name}_${productColor}.jpg) no-repeat`;
+productImg.style.background = `url(img/${products[
+  productId
+].name.toLowerCase()}_${productColor.toLowerCase()}.jpg) no-repeat`;
 productImg.style.backgroundSize = `cover`;
 
 // DISPLAY PRODUCT IMG
@@ -123,7 +125,7 @@ addToCart.addEventListener("click", function addToCart() {
   cart.push({
     name: productName.innerHTML,
     color: radioSelected,
-    price: productPrice,
+    price: price,
     size: selectSize.value,
     total: 1,
   }),
