@@ -44,7 +44,7 @@ const displayCartItems = document.querySelector(".display-items");
 // COLOR SELECT LOOP
 
 products[productId].attributes[0].terms.forEach((color) => {
-  colorSelect.innerHTML += `<input type="radio" id="${color.name.toLowerCase()}" name="color-select" 
+  colorSelect.innerHTML += `<input type="radio" id="${color.name}" name="color-select" 
   value="${color.name}"/> <label for="${color.name}">${color.name}</label>`;
 });
 
@@ -52,18 +52,11 @@ products[productId].attributes[0].terms.forEach((color) => {
 
 // DISPLAY PRODUCT IMG
 
-console.log(products[productId].name.toLowerCase());
-console.log(productColor.toLowerCase());
-
-colorSelect.innerHTML += `<div class="product-img"><img class="product-img-sizer" src="img/${products[
-  productId
-].name.toLowerCase()}_${productColor.toLowerCase()}.jpg" alt="" /></div>`;
+colorSelect.innerHTML += `<div class="product-img"><img class="product-img-sizer" src="img/${products[productId].name}_${productColor}.jpg" alt="" /></div>`;
 
 const productImg = document.querySelector(".product-img");
 
-productImg.style.background = `url(img/${products[
-  productId
-].name.toLowerCase()}_${productColor.toLowerCase()}.jpg) no-repeat`;
+productImg.style.background = `url(img/${products[productId].name}_${productColor}.jpg) no-repeat`;
 productImg.style.backgroundSize = `cover`;
 
 // DISPLAY PRODUCT IMG

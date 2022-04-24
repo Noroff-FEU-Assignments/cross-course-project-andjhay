@@ -2,8 +2,6 @@ const productCard = document.querySelector(".product-gallery-grid");
 
 import { products } from "./fetchproducts.js";
 
-console.log(products);
-
 products.forEach((current, index) => {
   current.attributes[0].terms.forEach((attribute) => {
     let price = products[index].prices.price.slice(0, -2);
