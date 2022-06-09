@@ -1,8 +1,6 @@
-# Your project title
+# Semester 1 Cross Course Project - Noroff
 
 ![crosscourseproject](https://user-images.githubusercontent.com/88853764/172799761-5db281a5-dc62-41c9-bea1-5210cdf4eb08.png)
-
-Semester 1 Cross Course Project - Noroff
 
 ## Description
 
