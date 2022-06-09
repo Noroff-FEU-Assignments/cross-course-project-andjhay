@@ -9,8 +9,11 @@ This project was completed in stages throughout the first year of the Noroff Fro
 ## Built With
 
 HTML
+
 CSS
+
 Javascript
+
 Headless Wordpress API
 
 ## Getting Started
