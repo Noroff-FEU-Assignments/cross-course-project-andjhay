@@ -34,5 +34,6 @@ npm install
 
 ## Contact
 
-[My LinkedIn page] (https://www.linkedin.com/in/andrewjameshay/)
-[My Github page] (https://github.com/andjhay)
+[My LinkedIn page] https://www.linkedin.com/in/andrewjameshay/
+
+[My Github page] https://github.com/andjhay
