@@ -1,4 +1,4 @@
-const url = "https://andrewhay.no/Noroff/rainydays/wp-json/wc/store/products";
+const url = "https://andrewhay.no/noroff/rainydays/wp-json/wc/store/products";
 
 async function getProducts() {
   // fetch
